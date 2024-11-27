@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demoshop.AddItemToCartTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-27T17:27:51" hostname="NICKPC" time="1.668">
+  <properties/>
+  <testcase name="addItemtoCartTest" classname="demoshop.AddItemToCartTests" time="1.668"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

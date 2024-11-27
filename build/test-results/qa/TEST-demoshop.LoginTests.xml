@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demoshop.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-27T17:27:57" hostname="NICKPC" time="1.506">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="demoshop.LoginTests" time="1.506"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
