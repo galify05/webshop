@@ -43,6 +43,10 @@ public class UserHelper extends BaseHelper {
         return isElementPresent((By.cssSelector("[href='/logout']")));
     }
 
+    public boolean isLoginUsuccessful() {
+        return isElementPresent((By.xpath("//div[@class='validation-summary-errors']//span[contains(.,'Login was unsuccessful')]")));
+    }
+
     public void clickOnLogOutButton() {
         click(By.cssSelector("[href='/logout']"));
     }
@@ -50,4 +54,10 @@ public class UserHelper extends BaseHelper {
     public boolean isRegistrationComplete() {
         return isElementPresent(By.className("result"));
     }
+
+    public void clearPss(){
+clearField(By.name("Password"));
+    }
 }
+
+
