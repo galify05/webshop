@@ -32,15 +32,18 @@ task qa1(type: Test) {
 
         def suite1 = project.hasProperty("suite1") // запуск теста логин
         def suite2 = project.hasProperty("suite2") // запуск смоки (всех тестов (кроме негативных))
-        def suite3 = project.hasProperty("suite2") // запуск негативных тестов
+        def suite3 = project.hasProperty("suite3") // запуск негативных тестов
+        def suite4 = project.hasProperty("suite4")
 
         if (suite1) {
             suites 'src/test/resources/testng.xml'
         } else if (suite2) {
             suites 'src/test/resources/smoky.xml'
-        }else if (suite3) {
+        } else if (suite3) {
             suites 'src/test/resources/negativ.xml'
-    }
+        } else if (suite4) {
+            suites 'src/test/resources/addToCart.xml'
+        }
     }
     if (project.hasProperty("browser")) {
         systemProperty "browser", "${browser}"

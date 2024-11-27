@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+
+<suite name="Adding" verbose="1">
+    <test name="Adding">
+        <classes>
+            <class name="demoshop.AddItemToCartTests"/>
+            <class name="demoshop.LoginTests">
+            <methods>
+                <exclude name =".*Negative.*"></exclude> <!--исключить -->
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
